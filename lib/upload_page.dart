@@ -82,7 +82,7 @@ class _UploadPageState extends State<UploadPage> {
           onPressed: isUploading ? null : uploadAndRecognize, // 按鈕點擊事件
           child: isUploading
               ? const CircularProgressIndicator() // 如果正在上傳，顯示載入狀態
-              : const Text("上传并辨识"), // 否則按鈕顯示文字
+              : const Text("上傳並辨識"), // 否則按鈕顯示文字
         ),
       ),
     );
