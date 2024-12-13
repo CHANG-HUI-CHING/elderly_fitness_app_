@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.edu.wzu.app.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_standFragment"
+            app:destination="@id/standFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sitFragment"
+            app:destination="@id/sitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/standFragment"
+        android:name="com.edu.wzu.app.StandFragment"
+        android:label="fragment_stand"
+        tools:layout="@layout/fragment_stand" >
+        <action
+            android:id="@+id/action_standFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_standFragment_to_standUpperLimbFragment"
+            app:destination="@id/standUpperLimbFragment" />
+        <action
+            android:id="@+id/action_standFragment_to_standLowerLimbFragment"
+            app:destination="@id/standLowerLimbFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitFragment"
+        android:name="com.edu.wzu.app.SitFragment"
+        android:label="fragment_sit"
+        tools:layout="@layout/fragment_sit" >
+        <action
+            android:id="@+id/action_sitFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_sitFragment_to_sitUpperLimbFragment"
+            app:destination="@id/sitUpperLimbFragment" />
+        <action
+            android:id="@+id/action_sitFragment_to_sitLowerLimbFragment"
+            app:destination="@id/sitLowerLimbFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitUpperLimbFragment"
+        android:name="com.edu.wzu.app.SitUpperLimbFragment"
+        android:label="fragment_sit_upper_limb"
+        tools:layout="@layout/fragment_sit_upper_limb" >
+        <action
+            android:id="@+id/action_sitUpperLimbFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/standUpperLimbFragment"
+        android:name="com.edu.wzu.app.StandUpperLimbFragment"
+        android:label="fragment_stand_upper_limb"
+        tools:layout="@layout/fragment_stand_upper_limb" >
+        <action
+            android:id="@+id/action_standUpperLimbFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sitLowerLimbFragment"
+        android:name="com.edu.wzu.app.SitLowerLimbFragment"
+        android:label="fragment_sit_lower_limb"
+        tools:layout="@layout/fragment_sit_lower_limb" >
+        <action
+            android:id="@+id/action_sitLowerLimbFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/standLowerLimbFragment"
+        android:name="com.edu.wzu.app.StandLowerLimbFragment"
+        android:label="fragment_stand_lower_limb"
+        tools:layout="@layout/fragment_stand_lower_limb" >
+        <action
+            android:id="@+id/action_standLowerLimbFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.edu.wzu.app.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" >
+        <action
+            android:id="@+id/action_videoFragment_to_gradeSystemFragment"
+            app:destination="@id/gradeSystemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gradeSystemFragment"
+        android:name="com.edu.wzu.app.GradeSystemFragment"
+        android:label="fragment_grade_system"
+        tools:layout="@layout/fragment_grade_system" />
+</navigation>

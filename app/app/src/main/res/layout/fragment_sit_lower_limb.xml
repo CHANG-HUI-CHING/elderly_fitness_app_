@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.edu.wzu.app.UrlViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SitLowerLimbFragment">
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="761dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp">
+                <!--        肩胛轉圈-->
+
+                <!--        肩胛下壓-->
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayoutCalfStretch"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline33"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline32">
+
+
+                    <ImageView
+                        android:id="@+id/CalfStretch_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/CalfStretch_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/CalfStretch"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/CalfStretch_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小腿拉伸簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayoutTiptoe"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline33"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline32">
+
+
+                    <ImageView
+                        android:id="@+id/Tiptoe_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Tiptoe_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Tiptoe"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Tiptoe_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="踮腳簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayoutSideLegLift"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline31"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline30">
+
+
+                    <ImageView
+                        android:id="@+id/SideLegLift_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/SideLegLift_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/SideLegLift"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/SideLegLift_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="側舉腿簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayoutLegRaises"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline31"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline30">
+
+
+                    <ImageView
+                        android:id="@+id/LegRaises_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/LegRaises_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/LegRaises"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/LegRaises_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="抬腿簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline18"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline29"
+                    app:layout_constraintVertical_bias="1.0">
+
+
+                    <ImageView
+                        android:id="@+id/Squat_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Squat_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Squat"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Squat_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="深蹲簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline18"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline29"
+                    app:layout_constraintVertical_bias="1.0">
+
+
+                    <ImageView
+                        android:id="@+id/DorsiflexTheAnkleAndExtendTheKnee_sit_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sitting" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/DorsiflexTheAnkleAndExtendTheKnee_LLsit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/DorsiflexKnee"
+                            android:textSize="@dimen/smalloption_size" />
+
+                        <TextView
+                            android:id="@+id/DorsiflexTheAnkleAndExtendTheKnee_sit_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="腳踝背屈下做膝伸直簡易說明"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="395dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="393dp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="395dp"
+                    android:layout_marginBottom="731dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintGuide_begin="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="255dp"
+                    android:layout_height="73dp"
+                    android:background="@drawable/pink_rounded_background"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline29"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline7"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="坐姿-下肢肌群"
+                        android:textSize="@dimen/AppName_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="180dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="405dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="518dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="545dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="659dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="679dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="808dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="270dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="378dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="709dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</layout>

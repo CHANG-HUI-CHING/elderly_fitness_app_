@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">健身app</string>
+    <string name="stand_name">站姿</string>
+    <string name="sitting_name">坐姿</string>
+    <string name="myocardial_group">核心肌群</string>
+    <string name="Upper_limb_muscle_groups">上肢肌群</string>
+    <string name="Lower_limb_muscles">下肢肌群</string>
+    <string name="shoulder_blade_circles">肩胛轉圈</string>
+    <string name="shoulder_blade_circlesSuggestion">坐正，手放在身體兩側，身體向上延伸</string>
+    <string name="scapular_depression">肩胛下壓</string>
+    <string name="scapular_depressionSuggestion">手直直的一個V，吐氣往下壓，沿著平面下去，吸氣往上，手盡量平的，肩膀先往下手才下</string>
+    <string name="BicepsCurl">二頭肌彎舉</string>
+    <string name="BicepsCurlSuggestion">吐氣，肩膀下壓，手肘及肩膀不要動</string>
+    <string name="OverheadTricepsExtensions_1">三頭肌伸展-1</string>
+
+    <string name="Nodata">無</string>
+    <string name="OverheadTricepsExtensions_2">三頭肌伸展-2</string>
+    <string name="DumbbellSideSwings">啞鈴側擺</string>
+    <string name="DumbbellSideSwingsSuggestion">先把手肘彎起來，吸氣準備，吐氣的時候，手推到斜邊，再吸氣，手回來，下肢不動只動上半身</string>
+    <string name="TwoHandedOverheadPress">雙手肩部推壓</string>
+    <string name="TwoHandedOverheadPressSuggestion">先把手肘彎起來，盡量往上推</string>
+    <string name="BentOverRow">俯身划船</string>
+    <string name="BentOverRowSuggestion">身體盡量不要動，肩膀先往後一點後固定，手肘再動</string>
+    <string name="ShoulderPress">肩推</string>
+    <string name="ShoulderPressSuggestion">兩隻手一起，肚子收好再出去</string>
+    <string name="TwoHandGrinding">雙手推磨</string>
+    <string name="TwoHandGrindingSuggestion">手舉起來肩膀同寬，身體盡量拉高，往上延伸</string>
+    <string name="ReverseFly">反向飛鳥</string>
+    <string name="ReverseFlySuggestion">吸氣的時候準備，吐氣的時候肩膀壓好，手盡量延伸，好像再抱一棵樹，手跟身體都要往外延伸</string>
+<!--    下肢-->
+    <string name="Squat">深蹲</string>
+    <string name="SquatSuggestion">把身體往前傾，重心先到前面的腳，慢慢起來站到直，拉高身體，下去時髖關節先往後彎而不是膝蓋</string>
+    <string name="DorsiflexKnee">腳踝背屈下做膝伸直</string>
+    <string name="DorsiflexKneeSuggestion">坐正，先把我的右腳腳板把他勾起來，維持在勾的情況下盡量把他踢直，腳不會開也不會合</string>
+    <string name="LegRaises">抬腿</string>
+    <string name="LegRaisesSuggestion">吸氣準備，吐氣的時候肚子收好，膝蓋輕輕往上抬，抬腿時身體不能往前彎，骨盆與地面垂直，動的地方只有腳</string>
+    <string name="SideLegLift">側舉腿</string>
+    <string name="SideLegLiftSuggestion">往上往外畫一個圓圈再放下去，下肢放輕鬆，移動膝蓋</string>
+    <string name="Tiptoe">踮腳</string>
+    <string name="TiptoeSuggestion">腳排列要正，腳跟墊起來時在最高處可以試著腳趾抓地</string>
+
+
+    <string name="OnefootforwardOnefootback">一腳前一腳後加上肢動作做重心位移</string>
+    <string name="OnefootforwardOnefootbackSuggestion">訓練重心的轉移，重心往前時，前腳吃所有力量，身體向上延伸，不要偏前或偏後</string>
+    <string name="Standingononeleg">單腳站立</string>
+    <string name="StandingononelegSuggestion">骨盆平的，稱到30秒</string>
+
+    <string name="Heeltotoemovinginastraightline">腳跟腳尖直線移動</string>
+    <string name="HeeltotoemovinginastraightlineSuggestion">身體往上延伸，不要前彎或後仰，不要晃一氣呵成</string>
+    <string name="ChairLunge">扶椅弓箭步</string>
+    <string name="ChairLungeSuggestion">往後跨一步，下去的時候，腳朝前，後腳可以稍微離開地板，後膝蓋輕輕垂直往下，一點點就好</string>
+
+    <string name="mini_Squat">微深蹲</string>
+    <string name="mini_SquatSuggestion">膝蓋稍微往下，起來時膝蓋感覺夾著枕頭，有往內的力量</string>
+
+    <string name="Touchthegroundleftandright">單腳前後左右點地</string>
+    <string name="TouchthegroundleftandrightSuggestion">點的面積越大越好</string>
+
+    <string name="CalfStretch">小腿拉伸</string>
+    <string name="CalfStretchSuggestion">腳膝蓋打直，身體維持直的，腳板勾起來，維持5秒</string>
+    
+    <string name="grading_system">評分系統</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+
+</resources>

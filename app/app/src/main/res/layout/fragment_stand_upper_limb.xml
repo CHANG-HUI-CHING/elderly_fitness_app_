@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.edu.wzu.app.UrlViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StandUpperLimbFragment">
+
+        <ScrollView
+            android:id="@+id/ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--        肩胛轉圈-->
+
+                <!--        肩胛下壓-->
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline43"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+
+                    <ImageView
+                        android:id="@+id/shoulder_blade_circles_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/shoulder_blade_circles_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/shoulder_blade_circles"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/shoulder_blade_circles_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="肩胛轉圈簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline43"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0">
+
+
+                    <ImageView
+                        android:id="@+id/scapular_depression_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/scapular_depression_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/scapular_depression"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/scapular_depression_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="肩胛下壓簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="255dp"
+                    android:layout_height="73dp"
+                    android:background="@drawable/pink_rounded_background"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline42"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline41">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="站姿-上肢肌群"
+                        android:textSize="@dimen/AppName_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="1022dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="180dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="260dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="368dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="395dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="505dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="533dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="646dp" />
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline45"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline44">
+
+
+                    <ImageView
+                        android:id="@+id/BicepsCurl_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/BicepsCurl_ULstand_button"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/BicepsCurl"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/BicepsCurl_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="二頭肌彎舉簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline45"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline44"
+                    app:layout_constraintVertical_bias="1.0">
+
+
+                    <ImageView
+                        android:id="@+id/OverheadTricepsExtensions_1_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/OverheadTricepsExtensions_1_ULstand_button"
+                            android:layout_width="95dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/OverheadTricepsExtensions_1"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/OverheadTricepsExtensions_1_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="三頭肌伸展-1簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline50"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline49">
+
+
+                    <ImageView
+                        android:id="@+id/Shoulder_Press_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Shoulder_Press_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/ShoulderPress"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Shoulder_Press_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="肩推簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline47"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline46">
+
+
+                    <ImageView
+                        android:id="@+id/Two_Handed_Overhead_Press_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Two_Handed_Overhead_Press_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/TwoHandedOverheadPress"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Two_Handed_Overhead_Press_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="雙手肩部推壓簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline47"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline46">
+
+
+                    <ImageView
+                        android:id="@+id/Dumbbell_Side_Swings_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Dumbbell_Side_Swings_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/DumbbellSideSwings"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Dumbbell_Side_Swings_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="啞鈴側擺簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline50"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline49">
+
+
+                    <ImageView
+                        android:id="@+id/Two_hand_grinding_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Two_hand_grinding_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/TwoHandGrinding"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Two_hand_grinding_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="雙手推磨簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout10"
+                    android:layout_width="180dp"
+                    android:layout_height="110dp"
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline52"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline51">
+
+
+                    <ImageView
+                        android:id="@+id/Reverse_Fly_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Reverse_Fly_ULstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/ReverseFly"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Reverse_Fly_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="反向飛鳥簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="672dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="787dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="814dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="928dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+    </FrameLayout>
+</layout>

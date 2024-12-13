@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.edu.wzu.app.UrlViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StandLowerLimbFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--        肩胛轉圈-->
+
+                <!--        肩胛下壓-->
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline56"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline55">
+
+
+                    <ImageView
+                        android:id="@+id/Tiptoe_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Tiptoe_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Tiptoe"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Tiptoe_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="踮腳簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline56"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline55">
+
+
+                    <ImageView
+                        android:id="@+id/Side_Leg_Lift_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Side_Leg_Lift_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/SideLegLift"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Side_Leg_Lift_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="側舉腿簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline54"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline48">
+
+
+                    <ImageView
+                        android:id="@+id/Leg_Raises_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Leg_Raises_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/LegRaises"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Leg_Raises_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="抬腿簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline54"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline48">
+
+
+                    <ImageView
+                        android:id="@+id/shoulder_blade_circles_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Squat_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Squat"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Squat_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="深蹲簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline58"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline57"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <ImageView
+                        android:id="@+id/OnefootforwardOnefootback_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/OnefootforwardOnefootback_LLstand_button"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/OnefootforwardOnefootback"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/OnefootforwardOnefootback_Lift_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="一腳前一腳後加上肢動作做重心位移簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout10"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline62"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline61">
+
+
+                    <ImageView
+                        android:id="@+id/mini_Squat_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/mini_Squat_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/mini_Squat"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/mini_Squat_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="微深蹲簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout8"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline60"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline59">
+
+
+                    <ImageView
+                        android:id="@+id/Heeltotoemovinginastraightline_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Heeltotoemovinginastraightline_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Heeltotoemovinginastraightline"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Heeltotoemovinginastraightline_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="腳跟腳尖直線移動簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline62"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline61">
+
+
+                    <ImageView
+                        android:id="@+id/Chair_Lunge_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Chair_Lunge_LLstand_button"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/ChairLunge"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Chair_Lunge_stand_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:text="扶椅弓箭步簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline60"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline59">
+
+
+                    <ImageView
+                        android:id="@+id/Standingononeleg_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Standingononeleg_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Standingononeleg"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Standingononeleg_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="單腳站立簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout11"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline64"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="@+id/guideline63">
+
+
+                    <ImageView
+                        android:id="@+id/Calf_Stretch_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Calf_Stretch_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/CalfStretch"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Calf_Stretch_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="小腿拉伸簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/linearLayout12"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_background"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/toolbarsize"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline64"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                    app:layout_constraintTop_toTopOf="@+id/guideline58">
+
+
+                    <ImageView
+                        android:id="@+id/Touchthegroundleftandright_stand_imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/standingup" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Touchthegroundleftandright_LLstand_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/optopns_btn"
+                            android:text="@string/Touchthegroundleftandright"
+                            android:textSize="@dimen/option_size" />
+
+                        <TextView
+                            android:id="@+id/Touchthegroundleftandright_stand_textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="單腳前後左右點地簡易說明"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="395dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="255dp"
+                    android:layout_height="73dp"
+                    android:background="@drawable/pink_rounded_background"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline48"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline7"
+                    app:layout_constraintVertical_bias="0.04">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="站姿-下肢肌群"
+                        android:textSize="@dimen/AppName_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="180dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="260dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="1166dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="374dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="401dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="515dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="542dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="816dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="683dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="792dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="958dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="774dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="964dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="1094dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+</layout>
