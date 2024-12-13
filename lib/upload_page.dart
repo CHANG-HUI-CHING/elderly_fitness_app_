@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart'; // 导入 file_picker 插件
-import 'api_service.dart'; // 确保导入正确的 API 服务类
+import 'package:file_picker/file_picker.dart'; // 導入 file_picker 插件
+import 'api_service.dart'; // 確保導入正確的API服務類
 
 class UploadPage extends StatefulWidget {
   const UploadPage({super.key});
@@ -10,39 +10,39 @@ class UploadPage extends StatefulWidget {
 }
 
 class _UploadPageState extends State<UploadPage> {
-  bool isUploading = false; // 上传时的状态指示
+  bool isUploading = false; //上傳時的狀態指示
 
-  // 上传和辨识图片的功能
+  // 上傳和標註圖片的功能
   Future<void> uploadAndRecognize() async {
-    // 使用 file_picker 选择文件
+    // 使用 file_picker 選擇文件
     String? filePath = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['jpg', 'png'], // 限制只允许选择图片文件
-    )?.then((result) => result?.files.single.path); // 获取文件路径
+      allowedExtensions: ['jpg', 'png'], // 限制只允許選擇圖片文件
+    )?.then((result) => result?.files.single.path); // 獲取文件路徑
 
     if (filePath == null) {
-      // 如果用户没有选择文件，返回
+      // 如果使用者沒有選擇文件，返回
       return;
     }
 
     setState(() {
-      isUploading = true; // 开始上传时显示加载状态
+      isUploading = true; // 開始上傳時顯示載入狀態
     });
 
     try {
-      // 上传图片到服务器并获取结果
+      // 上傳圖片到伺服器並取得結果
       var result = await ApiService.uploadImage(filePath);
 
-      // 从返回的结果中提取分类和信心值
+      // 從傳回的結果中提取分類和準確值
       int classId = result['class_id'];
       double confidence = result['confidence'];
 
-      // 显示辨识结果
+      // 顯示結果
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: const Text('辨识结果'),
-          content: Text('分类: $classId\n信心值: ${confidence.toStringAsFixed(2)}'),
+          title: const Text('辨識結果'),
+          content: Text('分类: $classId\n準確值: ${confidence.toStringAsFixed(2)}'),
           actions: [
             TextButton(
                 onPressed: () => Navigator.pop(context),
@@ -51,12 +51,12 @@ class _UploadPageState extends State<UploadPage> {
         ),
       );
     } catch (e) {
-      // 如果上传或辨识失败，显示错误信息
+      // 如果上傳或提交失敗，顯示錯誤訊息
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: const Text('错误'),
-          content: Text('辨识失败：$e'),
+          title: const Text('錯誤'),
+          content: Text('辨識失敗：$e'),
           actions: [
             TextButton(
                 onPressed: () => Navigator.pop(context),
@@ -66,7 +66,7 @@ class _UploadPageState extends State<UploadPage> {
       );
     } finally {
       setState(() {
-        isUploading = false; // 上传完成后恢复按钮状态
+        isUploading = false; // 上傳完成後恢復按鈕狀態
       });
     }
   }
@@ -75,14 +75,14 @@ class _UploadPageState extends State<UploadPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("上传并辨识"),
+        title: const Text("上傳並辨識"),
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: isUploading ? null : uploadAndRecognize, // 按钮点击事件
+          onPressed: isUploading ? null : uploadAndRecognize, // 按鈕點擊事件
           child: isUploading
-              ? const CircularProgressIndicator() // 如果正在上传，显示加载状态
-              : const Text("上传并辨识"), // 否则显示按钮文本
+              ? const CircularProgressIndicator() // 如果正在上傳，顯示載入狀態
+              : const Text("上传并辨识"), // 否則按鈕顯示文字
         ),
       ),
     );
