@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    # 这里是您的 API 逻辑
+    # 這是您的 API 邏輯
     return jsonify({'message': 'API is working!'})
 
 if __name__ == '__main__':
